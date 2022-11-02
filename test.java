@@ -3,7 +3,13 @@ public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hello World!!");
+		for (int i = 9; i >= 1 ; i--) {
+			for (int j = i; j >= 1; j--) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+		
 	}
 
 }
