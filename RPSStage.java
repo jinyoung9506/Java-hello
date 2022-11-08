@@ -25,7 +25,7 @@ public class RPSStage {
 			break;
 		}
 	}
-	
+
 	public void result() {
 		if (this.player.equals("가위")) {
 			if (this.CPU.equals("가위")) {

@@ -1,24 +1,40 @@
+class MobilePhone {
+   protected String number;
+   
+   public MobilePhone(String num) {
+      number = num; 
+   }
+   public void answer() {
+      System.out.println("Hi~ from " + number);
+   }
+}
+
+class SmartPhone extends MobilePhone {
+   private String androidVer;
+   
+   public SmartPhone(String num, String ver) {
+      super(num);
+      androidVer = ver;
+   }
+   public void playApp() {
+      System.out.println("App is running in " + androidVer);
+   }
+}
+
 public class MainTest2 {
 
 	public static void main(String[] args) {
 		   // 문자열 "123"이 저장된 인스턴스의 생성
-		   StringBuilder stbuf = new StringBuilder("123");
-		   
-		   stbuf.append(45678);   // 문자열 덧붙이기
-		   System.out.println(stbuf.toString());
-		   
-		   stbuf.delete(0, 2);    // 문자열 일부 삭제
-		   System.out.println(stbuf.toString());
-		   
-		   stbuf.replace(0, 3, "AB");    // 문자열 일부 교체
-		   System.out.println(stbuf.toString());
+		SmartPhone ph1 = 
+	            new SmartPhone("010-555-777", "Nougat");
+	   MobilePhone ph2 = 
+	            new SmartPhone("010-999-333", "Nougat");
+	   ph1.answer();
+	   ph1.playApp();
+	   System.out.println();
+	   
+	   ph2.answer();
+	   //ph2.playApp();
 
-		   stbuf.reverse();    // 문자열 내용 뒤집기
-		   System.out.println(stbuf.toString());
-
-		   String sub = stbuf.substring(2, 4);  // 일부만 문자열로 반환
-		   System.out.println(sub);
-		}
-
-	
+	}
 }

@@ -1,4 +1,6 @@
-public class RunMain {
+import java.util.Scanner;
+
+public class LottoSetter {
 
 	public static void main(String[] args) {
 		int temp = 0;
@@ -10,9 +12,9 @@ public class RunMain {
 		
 		for(int i = 0; i < arr.length; i++) {
 			on = true;
-			temp = ((int)(Math.random() * 1000) % 46);
+			temp = (int)((Math.random() * 1000) % 46);
 			while (temp == 0) {
-				temp = ((int)(Math.random() * 1000) % 46);
+				temp = (int)((Math.random() * 1000) % 46);
 			}
 			for (int j = 0; j < arr.length; j++) {
 				if (arr[j] == temp) {
