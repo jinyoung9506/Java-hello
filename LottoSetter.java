@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-public class LottoSetter {
+class LottoSetter {
 
 	public static void main(String[] args) {
 		int temp = 0;

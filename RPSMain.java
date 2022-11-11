@@ -11,6 +11,7 @@ public class RPSMain {
 		
 		RPSStage stage = new RPSStage(RPS);
 		stage.result();
+		scanner.close();
 	}
 
 }

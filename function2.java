@@ -17,6 +17,7 @@ public class function2 {
 		
 		
 		System.out.println(" 100 까지의 합 : " + intSum(100));
+		scanner.close();
 	}
 	
 	public static int intSum(int number) {

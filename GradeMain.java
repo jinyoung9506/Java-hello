@@ -13,6 +13,7 @@ public class GradeMain {
          Grade me = new Grade(math, science, english);
          System.out.println("평균은 "+me.average());
          System.out.println(me.getGrade()); // 수 입니다
+         sc.close();
 	}
 
 }

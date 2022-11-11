@@ -4,7 +4,6 @@ public class forOp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int max = 0;
 		int min = 0;
 		int result = 0;
 		int a = 0;
@@ -15,7 +14,6 @@ public class forOp {
 		a = scan.nextInt();
 		System.out.print("B : ");
 		b = scan.nextInt();
-		max = a > b ? a : b;
 		min = a < b ? a : b;
 		for (int i = min; i <= (a * b); i++) {
 			if (((i % a) == 0) && ((i % b) == 0)) {
@@ -24,5 +22,6 @@ public class forOp {
 			}
 		}
 		System.out.println("최소공배수 : " + result);
+		scan.close();
 	}
 }

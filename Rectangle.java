@@ -1,5 +1,5 @@
 
-public class Rectangle {
+public class Rectangle extends Shape implements IShape {
 	private int width;
 	private int height;
 	
@@ -9,7 +9,23 @@ public class Rectangle {
 		this.height = height;
 	}
 	
-	public int getArea() {
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	public double getArea() {
 		return (this.width * this.height);
 	}
 }
